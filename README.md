@@ -11,6 +11,7 @@ Unlike existing approaches that focus mainly on AQI classification, this work di
 https://www.kaggle.com/datasets/rabieelkharoua/air-quality-and-health-impact-dataset
 
 ⚙️ Methodology
+
 🔹 Data Preprocessing
 Binning: Converted AQI, temperature, and humidity into categorical levels
 One-Hot Encoding: Converted categorical data into numerical format
@@ -35,12 +36,23 @@ Total Health Cases (R + C) → combined health impact
 
 Admission Rate → severity indicator
 
+
 🤖 Machine Learning Models
 
 The following models were implemented with hyperparameter tuning and 5-fold GridSearchCV:
 
 K-Nearest Neighbors (KNN)
+
 Decision Tree
+
 Random Forest
+
 XGBoost
+
 AdaBoost
+
+
+📈 Results
+
+<img width="650" height="123" alt="image" src="https://github.com/user-attachments/assets/1d9e68ce-73bc-44de-b97e-a929d5d4b0aa" />
+
