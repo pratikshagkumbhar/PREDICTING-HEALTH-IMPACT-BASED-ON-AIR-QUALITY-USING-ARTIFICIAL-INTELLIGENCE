@@ -13,43 +13,47 @@ https://www.kaggle.com/datasets/rabieelkharoua/air-quality-and-health-impact-dat
 ⚙️ Methodology
 
 🔹 Data Preprocessing
-Binning: Converted AQI, temperature, and humidity into categorical levels
-One-Hot Encoding: Converted categorical data into numerical format
-SMOTE: Used to balance minority classes
-Standard Scaling: Applied for better model performance
+-Binning: Converted AQI, temperature, and humidity into categorical levels
+
+-One-Hot Encoding: Converted categorical data into numerical format
+
+-SMOTE: Used to balance minority classes
+
+-Standard Scaling: Applied for better model performance
+
 
 🔹 Feature Engineering
 
 New features were created to capture combined effects:
 
-PM2.5 × Temperature → captures effect of heat on pollutant activity
+-PM2.5 × Temperature → captures effect of heat on pollutant activity
 
-PM2.5 × Humidity → shows particle suspension in air
+-PM2.5 × Humidity → shows particle suspension in air
 
-AQI / (Wind Speed + 1) → inverse relation with wind speed
+-AQI / (Wind Speed + 1) → inverse relation with wind speed
 
-PM2.5 / (PM10 + 1) → fine particle ratio for respiratory risk
+-PM2.5 / (PM10 + 1) → fine particle ratio for respiratory risk
 
-Total Pollution → sum of all pollutants
+-Total Pollution → sum of all pollutants
 
-Total Health Cases (R + C) → combined health impact
+-Total Health Cases (R + C) → combined health impact
 
-Admission Rate → severity indicator
+-Admission Rate → severity indicator
 
 
 🤖 Machine Learning Models
 
 The following models were implemented with hyperparameter tuning and 5-fold GridSearchCV:
 
-K-Nearest Neighbors (KNN)
+-K-Nearest Neighbors (KNN)
 
-Decision Tree
+-Decision Tree
 
-Random Forest
+-Random Forest
 
-XGBoost
+-XGBoost
 
-AdaBoost
+-AdaBoost
 
 
 📈 Results
